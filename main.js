@@ -4,7 +4,7 @@ let submit=document.querySelector('#submit')
 let adivina=document.querySelector('#adivina')
 let numerosPrevios= document.querySelector('#numerosPrevios')
 let respuesta=document.querySelector('#respuesta')
-let numeroAleatorio= Math.round(Math.random() * (1 - 100) +100)
+let numeroAleatorio= Math.round(Math.random() * (1 - 20) +20)
 let numerosIngresados=[]
 let numeroComparado= 0
 
