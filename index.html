@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css  ">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h2>Adivinar Numero</h2>
+    </header>
+    <main>
+        <div class="reglas">
+            <ol>
+                <li>Tenes que adivinar un numero aleatorio entre 1 y 100, ambos incluidos</li>
+                <li>Se le darán 10 posibilidades para adivinar el numero</li>
+                <li>Si acertas el numero en tus 10 posiblidades, ganas, o mejor suerte la proxima vez</li>
+            </ol>
+        </div>    
+        <button class="comenzar">Start Game</button>
+            <div class="game">
+                <form>
+                    <input type="number" id="adivina" min="1" max="100">
+                    <input type="submit" id="submit" value="Check">
+                    <div id="numerosIngresados">Tus numeros ingresados son:
+                        <b id="numerosPrevios"></b>
+                        <div id="respuesta"></div>
+                    </div>
+                </form>
+            </div>
+    </main>
+
+<script src="main.js"></script>
+</body>
+</html>
