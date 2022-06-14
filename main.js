@@ -18,13 +18,15 @@ submit.addEventListener("click",(e)=>{
     numerosIngresados.push(adivina.value)
     numerosPrevios.textContent=numerosIngresados
     
-    if(adivina.value<numeroAleatorio){
-        respuesta.textContent=('el numero ganador es mayor, tenes x posiblidades mas')
-    } else if (adivina.value>numeroAleatorio){
-        respuesta.textContent=('el numero ganador es menor, tenes x posibilidades mas')
-    } else if(adivina.value==numeroAleatorio){
-        respuesta.textContent=(`Ganaste, el numero ganador era ${numeroAleatorio}. Adivinaste, felicitaciones.`)
-    } else {
+    if(numerosIngresados.length<=10){
+        if(adivina.value<numeroAleatorio){
+            respuesta.textContent=('el numero ganador es mayor, tenes x posiblidades mas')
+        } else if (adivina.value>numeroAleatorio){
+            respuesta.textContent=('el numero ganador es menor, tenes x posibilidades mas')
+        } else if(adivina.value==numeroAleatorio){
+            respuesta.textContent=(`Ganaste, el numero ganador era ${numeroAleatorio}. Adivinaste, felicitaciones.`)
+        }
+    }  else {
         respuesta.textContent=(`Perdiste, el numero ganador era ${numeroAleatorio}. Mejor suerte la próxima vez.`)  
     }
 })
